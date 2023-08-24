@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "9ed6dd13-68a4-48e7-9476-5c0206c54bbc",
+		"name": "quizapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28422949"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/question/allQuestions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/question/allQuestions",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"question",
+						"allQuestions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/question/allQuestions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/question/allQuestions",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"question",
+								"allQuestions"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/question/add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"category\": \"JAVA\",\n    \"questionTitle\": \"Maximun value for byte in JAVA\",\n    \"option1\": \"100\",\n    \"option2\": \"127\",\n    \"option3\": \"255\",\n    \"rightAnswer\": \"127\",\n    \"difficultyLevel\": \"Easy\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/question/add",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"question",
+						"add"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/question/add",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\": \"JAVA\",\n    \"questionTitle\": \"Which Java keyword is used to create a subclass?\",\n    \"option1\": \"class\",\n    \"option2\": \"interface\",\n    \"option3\": \"extends\",\n    \"rightAnswer\": \"extends\",\n    \"difficultyLevel\": \"Easy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/question/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"question",
+								"add"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "localhost:8080/question/add(2)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"category\": \"JAVA\",\n    \"questionTitle\": \"Maximun value for short in JAVA\",\n    \"option1\": \"1\",\n    \"option2\": \"2\",\n    \"option3\": \"3\",\n    \"rightAnswer\": \"3\",\n    \"difficultyLevel\": \"Easy\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/question/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"question",
+								"add"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/quiz/create?category=JAVA&title=testQuiz&numQ=10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/quiz/create?category=JAVA&title=testQuiz&numQ=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz",
+						"create"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "JAVA"
+						},
+						{
+							"key": "title",
+							"value": "testQuiz"
+						},
+						{
+							"key": "numQ",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/quiz/create?category=JAVA&title=testQuiz&numQ=10",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/quiz/create?category=JAVA&title=testQuiz&numQ=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"quiz",
+								"create"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "JAVA"
+								},
+								{
+									"key": "title",
+									"value": "testQuiz"
+								},
+								{
+									"key": "numQ",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/quiz/get/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/quiz/get/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/quiz/get/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/quiz/get/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"quiz",
+								"get",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "localhost:8080/quiz/submit/1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 3,\n        \"response\": \"3\"\n    },\n    {\n        \"id\": 2,\n        \"response\": \"extends\"\n    },\n    {\n        \"id\": 1,\n        \"response\": \"127\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/quiz/submit/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"quiz",
+						"submit",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8080/quiz/submit/1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": 3,\n        \"response\": \"3\"\n    },\n    {\n        \"id\": 2,\n        \"response\": \"extends\"\n    },\n    {\n        \"id\": 1,\n        \"response\": \"127\"\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/quiz/submit/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"quiz",
+								"submit",
+								"1"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
